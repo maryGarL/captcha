@@ -1,0 +1,26 @@
+#imagen{
+	    position: relative;
+    width: 16px;
+    height: 16px;
+    bottom: 15px;
+}
+
+.imagen{
+  display: inline;
+  width: 113px;
+  height: 64px;
+}
+#numero{
+  display: inline-block;
+    position: relative;
+    height: 25px;
+    width: 77px;
+    bottom: 35px;
+    left: 115px;
+    border: solid 1px;
+}
+#cajita{
+  background-color: crimson;
+    display: inline-block;
+    height: 141px;
+}
