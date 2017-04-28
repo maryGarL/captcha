@@ -14,11 +14,14 @@ code += chars.substr(rand, 1);
 }
 window.addEventListener("load", function(){
     codigo.innerHTML=aleatorio(caracteres);
+    function a(vv){
+      if(valor.value==codigo.value){
+        alert("no eres un robot")
+      }
+    }
+    valor.onblur=a(vvv)
+    
 });
 image.addEventListener("click", function(){
     codigo.innerHTML=aleatorio(caracteres);
 });
-
-    if(valor.value==numero.value){
-      alert("no eres un robot")
-    }
