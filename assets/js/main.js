@@ -13,15 +13,20 @@ code += chars.substr(rand, 1);
 	return code;
 }
 window.addEventListener("load", function(){
-    codigo.innerHTML=aleatorio(caracteres);
-    function a(vv){
+    codigo.innerText=aleatorio(caracteres);
+		codigo.value=codigo.innerText
+  var validar= function(){
+		console.log(codigo.value);
+		console.log(codigo.innerText);
       if(valor.value==codigo.value){
-        alert("no eres un robot")
-      }
-    }
-    valor.onblur=a(vvv)
-    
+        alert("No eres un robot");
+      }else if (valor.value!==codigo.value) {
+      	alert("Oh Noes!! Tu eres un robot");
+      }}
+    valor.onblur=validar;
+
 });
 image.addEventListener("click", function(){
-    codigo.innerHTML=aleatorio(caracteres);
+		codigo.innerText=aleatorio(caracteres);
+
 });
